@@ -1,6 +1,19 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname |1.6|) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+;; Упражнение 1.6.
+;; Лиза П. Хакер не понимает, почему if должна быть особой формой.
+;; «Почему нельзя просто определить ее как обычную процедуру с помощью cond?» — спрашивает она.
+;; Лизина подруга Ева Лу Атор утверждает, что, разумеется, можно, и определяет новую версию if:
+;;(define (new-if predicate then-clause else-clause)
+;;        (cond (predicate then-clause)
+;;        (else else-clause)))
+;; Ева показывает Лизе новую программу:
+;; (new-if (= 2 3) 0 5)
+;; 5
+;; Обрадованная Лиза переписывает через new-if программу вычисления квадратного корня
+;; Что получится, когда Лиза попытается использовать эту процедуру для вычисления квадратных корней? Объясните.
+
 (define (average a b)
   (/ (+ a b) 2))
 
