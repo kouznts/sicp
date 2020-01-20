@@ -1,6 +1,11 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname |1.9|) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+;; Упражнение 1.9.
+;; Каждая из следующих двух процедур определяет способ сложения двух положительных целых чисел с помощью процедур 
+;; inc, которая добавляет к своему аргументу 1, 
+;; и dec, которая отнимает от своего аргумента 1.
+
 (define (+ a b)
   (if (= a 0)
       b
