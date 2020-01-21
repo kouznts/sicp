@@ -32,6 +32,8 @@
                  (count (- amount (first-denomination kind-of-coins)) kind-of-coins)))))
 
 ;; Упорядочили типы монет, которые у нас есть.
+;; Процедура принимает в качестве входа число доступных типов монет
+;; и возвращает достоинство первого типа.
 (define (first-denomination kind-of-coins)
   (cond ((= kind-of-coins 1) 1)
         ((= kind-of-coins 2) 5)
